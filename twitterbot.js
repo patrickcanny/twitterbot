@@ -2,10 +2,10 @@ var TwitterPackage = require('twitter');
 
 //Private Developer Codes From Twitter
 var secret = {
-  consumer_key: 'ym4M2u0qHRIoBLxuVpim6xDMJ',
-  consumer_secret: 'ytJ9FHS0tDt41emdYJRh2C17bpK4144zotkxxjyvaBkKYSoT5c',
-  access_token_key: '2833002973-STDDBcJRlgvgkyigJIjRGUOw9X8nE66aoxSLfhy',
-  access_token_secret: 't3Wu4zObIOdGxbvkrT1FSf1scV9xnfU50lqVf6kOMcka3'
+  consumer_key: //secret key,
+  consumer_secret: //secret key,
+  access_token_key: //secret key,
+  access_token_secret: //secret key
 }
 
 //Setting Up Twitter Package
@@ -32,7 +32,7 @@ Twitter.stream('statuses/filter', {track: '#'}, function(stream) {
   stream.on('data', function(tweet) {
 
     //If the User ID is NOT @therealcans
-    if (tweet.user.id != '2833002973'){
+    if (tweet.user.id != /*keeping my ID Secret*/){
 
       //Log the Text of the given tweet
       console.log(tweet.text);
